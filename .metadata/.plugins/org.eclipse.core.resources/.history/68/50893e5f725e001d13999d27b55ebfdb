@@ -1,0 +1,14 @@
+package actividadprogramacion;
+
+import java.util.Scanner;
+ 
+public class Ej1Tema4 {
+    public static void main(String[] args) {
+int p;
+String s1 = "Hola", palabra;
+for (p=0; p<=s1.length();p++){
+palabra=s1.substring(0,p);
+System.out.println(palabra);
+		}
+    }
+}

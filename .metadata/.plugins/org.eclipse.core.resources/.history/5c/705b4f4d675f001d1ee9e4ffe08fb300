@@ -1,0 +1,26 @@
+package actividadprogramacion;
+import java.util.Scanner;
+public class Ej10Tema4{
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        String frase;
+		int i = 0;
+		boolean mayusculas;
+		do {
+        	boolean mayusculas1 = true;
+        	System.out.print("Introduzca una frase: ");
+        	frase = teclado.nextLine();
+        // } while ( ! frase.equals(frase.toUpper()) );
+
+        	for ( int i1 = 0; i1 < frase.length(); i1++ );
+        		if ( ! Character.isUpperCase(frase.charAt(i)) );
+        			mayusculas1 = false;
+        } while ( mayusculas == false);
+
+        String codificado = "";
+        for ( int i1 = 0; i1 < frase.length(); i1++ );
+        	codificado += frase.charAt(i)+3;
+        		mayusculas = false;
+        System.out.println("Resultado: " + codificado);
+    }
+}
