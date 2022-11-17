@@ -7,8 +7,7 @@ public static void main(String[] args) {
 
     Scanner teclado = new Scanner(System.in);
     String codigo;
-    
-    int hPrimero = 0, hSegundo = 0, mPrimero = 0, mSegundo = 0;
+   
     
     System.out.print("Ingresa un codigo: ");
     codigo=teclado.nextLine();
@@ -30,19 +29,30 @@ public static void main(String[] args) {
 	    	if (n <= 1995 && n >= 1990) {
 	    		char sexo = codigo.charAt(4);
 	    		char curso = codigo.charAt(5);
-	    			    
 	    		
-	    	}else {
+	    	if (sexo=='H' || sexo=='M' || sexo=='h' || sexo=='m') {	 	
+	    	}
+	    	else {
+	    		System.out.println("El sexo no es correcto");
+	    	}
+	    	
+	    	if (curso=='1' || curso=='2') {	    	
+	    	}
+	    	else {
+	    		System.out.println("El curso no es correcto");
+	    	}
+	    	}
+	    	else {
 	    		System.out.println("El ano no es un numero entre 1990 y 1995");
 	    	}
 	    	
-	    }else {
+	    }
+	    else {
 	    	System.out.println("El ano no es un numero");
 	    }
     }
     else {
     	System.out.println("Debe tener 8 caracteres");
     }
-	}
+  }
 }
-
